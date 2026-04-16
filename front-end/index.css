@@ -1,0 +1,45 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+--background: 200 20% 98%;
+--foreground: 210 50% 10%;
+
+--primary: 199 89% 48%;
+--secondary: 180 40% 94%;
+--accent: 168 76% 42%;
+
+--border: 200 20% 90%;
+--radius: 0.75rem;
+}
+
+/* base styles */
+
+* {
+  border-color: hsl(var(--border));
+  }
+
+body {
+background: hsl(var(--background));
+color: hsl(var(--foreground));
+font-family: Inter, sans-serif;
+}
+
+/* headings */
+h1, h2, h3 {
+font-weight: 600;
+}
+
+ */
+.hero-gradient {
+background: linear-gradient(135deg, hsl(199 89% 48%), hsl(168 76% 42%));
+}
+
+.card-shadow {
+box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}

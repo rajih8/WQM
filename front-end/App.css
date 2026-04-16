@@ -1,0 +1,51 @@
+/* main container */
+#root {
+max-width: 1200px; /* reduced a bit, looked too big before */
+margin: 0 auto;
+padding: 20px;
+text-align: center;
+}
+
+/* logo (not really using this much but keeping it) */
+.logo {
+height: 5.5em;
+padding: 1.2em;
+transition: filter 0.3s ease;
+}
+
+/* hover effect */
+.logo:hover {
+filter: drop-shadow(0 0 1.5em #646cffaa);
+}
+
+/* react logo special case (copied earlier) */
+.logo.react:hover {
+filter: drop-shadow(0 0 1.5em #61dafbaa);
+}
+
+/* animation (might remove later if not needed) */
+@keyframes spinLogo {
+from {
+transform: rotate(0deg);
+}
+to {
+transform: rotate(360deg);
+}
+}
+
+/* only animate if user allows motion */
+@media (prefers-reduced-motion: no-preference) {
+.logo.spin {
+animation: spinLogo 18s linear infinite;
+}
+}
+
+/* card section */
+.card {
+padding: 1.8em; /* slightly adjusted */
+}
+
+/* small text */
+.read-the-docs {
+color: #777; /* softer color */
+}
